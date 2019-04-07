@@ -1,0 +1,24 @@
+{
+  "name": "binance-exchange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10.15.3"
+  },
+  "scripts": {
+    "build": "(cd client && npm run build) && (cd server && npm run build)",
+    "install": "(cd client && npm install) && (cd server && npm install)",
+    "start": "concurrently \"cd client && cross-env PORT=3000 npm start\" \"cd server && cross-env PORT=5000 npm start\"",
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
