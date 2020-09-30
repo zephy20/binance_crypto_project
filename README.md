@@ -7,4 +7,4 @@ Frontend - React
 Backend - Express
 
 
-<a href="https://aqueous-ravine-61553.herokuapp.com/">Demo</a>
+Checkout the <a href="https://aqueous-ravine-61553.herokuapp.com/">Demo</a>.
